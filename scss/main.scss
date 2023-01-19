@@ -6,8 +6,13 @@
     box-sizing: border-box;
 }
 
-.container {}
+.container {
+    max-width: 1252px;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+}
 
 @import './mixin';
 @import './veraybels';
-@import './allblock-file/alblock';
+@import './allblock-file/alblock;

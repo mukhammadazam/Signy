@@ -1,0 +1,14 @@
+@mixin flexfunksiya ($fd, $at, $jc, $wr) {
+    display: flex;
+    flex-direction: $fd;
+    align-items: $at;
+    justify-content: $jc;
+    flex-wrap: $wr;
+}
+
+@mixin BG ($bi, $nr, $bs, $bp) {
+    background-image: $bi;
+    background-repeat: $nr;
+    background-size: $bs;
+    background-position: $bp;
+}
