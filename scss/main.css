@@ -11,28 +11,4 @@
   margin: 0 auto;
   padding: 0 10px;
   width: 100%;
-}
-
-header {
-  background-image: url(../../imges/header.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center;
-}
-
-.nav {
-  padding: 44px 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.nav__list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 36px;
 }/*# sourceMappingURL=main.css.map */
