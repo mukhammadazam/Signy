@@ -60,7 +60,7 @@ header {
   line-height: 24px;
   color: rgba(6, 18, 36, 0.9);
 }
-.nav__list .select {
+.nav .select {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 500;
@@ -70,7 +70,7 @@ header {
   background: transparent;
   color: rgba(6, 18, 36, 0.9);
 }
-.nav__list .btn {
+.nav .btn {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 500;
@@ -81,14 +81,14 @@ header {
   padding: 8px 32px;
   color: rgba(6, 18, 36, 0.9);
 }
-.nav__list .btn:hover {
+.nav .btn:hover {
   background: #1064E5;
   border-radius: 45px;
   color: #FFFFFF;
   transition: all 2s ease;
   transform: rotate(360deg);
 }
-.nav__list .btn1 {
+.nav .btn1 {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 500;
@@ -101,11 +101,46 @@ header {
   padding: 8px 32px;
   border: 1px solid transparent;
 }
-.nav__list .btn1:hover {
+.nav .btn1:hover {
   background: #FFFFFF;
   border-radius: 45px;
   color: #1064E5;
   transition: all 2s ease;
   transform: rotate(360deg);
   border: 1px solid #1064E5;
+}
+
+.card-title {
+  padding-top: 113px;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 46px;
+  color: rgba(6, 18, 36, 0.9);
+}
+.card .leni {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: rgba(6, 18, 36, 0.9);
+  opacity: 0.6;
+}
+.card .leni:hover {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: rgba(6, 18, 36, 0.9);
+  opacity: 0.9;
+  transition: all 5s ease;
+}
+.card .leni__text {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: rgba(6, 18, 36, 0.9);
 }/*# sourceMappingURL=main.css.map */
