@@ -1,0 +1,53 @@
+header {
+    @include BG (url(../../imges/header.png), no-repeat, 100%, center)
+}
+
+.nav {
+    @include flexfunksiya (row, center, space-between, wrap);
+    padding: 39px 0;
+    &__list {
+        @include flexfunksiya (row, center, center, wrap);
+        gap: 36px;
+        &--item a {
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: rgba(6, 18, 36, 0.9);
+        }
+        .select {
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            border: none;
+            background: transparent;
+            color: rgba(6, 18, 36, 0.9);
+        }
+        .btn {
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            border: 1.5px solid #1064E5;
+            border-radius: 43px;
+            padding: 8px 32px;
+            color: rgba(6, 18, 36, 0.9);
+        }
+        .btn1 {
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background: #1064E5;
+            border-radius: 45px;
+            border: none;
+            padding: 8px 32px;
+        }
+    }
+}
