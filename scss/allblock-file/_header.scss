@@ -1,5 +1,7 @@
+@import '../veraybels';
+@import './fonts';
 header {
-    @include BG (url(../../imges/header.png), no-repeat, 100%, center)
+    @include BG (url(../../imges/box.png), no-repeat, 100%, center)
 }
 
 .nav {
@@ -9,45 +11,61 @@ header {
         @include flexfunksiya (row, center, center, wrap);
         gap: 36px;
         &--item a {
-            font-family: 'IBM Plex Sans';
+            font-family: $fonts;
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
-            color: rgba(6, 18, 36, 0.9);
+            color: $nav-color;
         }
         .select {
-            font-family: 'IBM Plex Sans';
+            font-family: $fonts;
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
             border: none;
             background: transparent;
-            color: rgba(6, 18, 36, 0.9);
+            color: $nav-color;
         }
         .btn {
-            font-family: 'IBM Plex Sans';
+            font-family: $fonts;
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
-            border: 1.5px solid #1064E5;
+            border: 1.5px solid$btn-color;
             border-radius: 43px;
             padding: 8px 32px;
-            color: rgba(6, 18, 36, 0.9);
+            color: $nav-color;
+            &:hover {
+                background: #1064E5;
+                border-radius: 45px;
+                color: $white-color;
+                transition: all 2s ease;
+                transform: rotate(360deg);
+            }
         }
         .btn1 {
-            font-family: 'IBM Plex Sans';
+            font-family: $fonts;
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
-            color: #FFFFFF;
-            background: #1064E5;
+            color: $white-color;
+            background: $btn-color;
             border-radius: 45px;
             border: none;
             padding: 8px 32px;
+            border: 1px solid transparent;
+            &:hover {
+                background: $white-color;
+                border-radius: 45px;
+                color: $btn-color;
+                transition: all 2s ease;
+                transform: rotate(360deg);
+                border: 1px solid $btn-color;
+            }
         }
     }
 }
