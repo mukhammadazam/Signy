@@ -143,4 +143,89 @@ header {
   font-size: 24px;
   line-height: 130%;
   color: rgba(6, 18, 36, 0.9);
+}
+
+.input {
+  display: none;
+}
+
+.label {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 50px;
+  }
+  header {
+    background-image: url(../../imges/tabletbagcround.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+  }
+  .nav {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 39px 0;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: translatey(-120%);
+    transition: all 3s ease;
+    gap: 36px;
+  }
+  .nav__list--item a {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(6, 18, 36, 0.9);
+  }
+  .label {
+    display: block;
+  }
+}
+.card-title {
+  padding-top: 50px;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 46px;
+  color: rgba(6, 18, 36, 0.9);
+}
+.card .leni {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: rgba(6, 18, 36, 0.9);
+  opacity: 0.6;
+}
+.card .leni:hover {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: rgba(6, 18, 36, 0.9);
+  opacity: 0.9;
+  transition: all 5s ease;
+}
+.card .leni__text {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: rgba(6, 18, 36, 0.9);
 }/*# sourceMappingURL=main.css.map */
