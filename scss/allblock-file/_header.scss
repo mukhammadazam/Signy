@@ -75,57 +75,6 @@ p {
     }
 }
 
-.card {
-    &-title {
-        padding-top: 113px;
-        font-family: $fonts;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 46px;
-        color: $nav-color;
-        padding-bottom: 18px;
-    }
-    .leni {
-        font-family: $fonts;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 130%;
-        color: $nav-color;
-        opacity: 0.6;
-        padding-bottom: 15px;
-        &:hover {
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 130%;
-            color: $nav-color;
-            opacity: 0.9;
-            transition: all 5s ease;
-        }
-    }
-    .card__text {
-        font-family: $fonts;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 130%;
-        color: $nav-color;
-        padding-bottom: 15px;
-    }
-    .btn {
-        background: $btn-color;
-        border-radius: 45px;
-        margin-top: 32px;
-        &:hover {
-            transition: all 2s ease;
-            transform: rotate(360deg);
-            background: linear-gradient(0deg, $white-color, $white-color);
-            color: $btn-color;
-        }
-    }
-}
-
 .span {
     @include flexfunksiya (row, center, center, wrap);
     gap: 25px;
@@ -149,61 +98,29 @@ p {
 }
 
 @media screen and (max-width:768px) {
-    header {
-        padding: 0;
-        position: absolute;
-        top: 0;
-        @include BG (url(../../imges/tabletbagcround.png), no-repeat, 100%, center);
-    }
     .nav {
-        padding: 39px;
+        position: relative;
         @include flexfunksiya (row, center, space-between, wrap);
+        padding: 39px 39px;
         &__list {
-            display: none;
+            position: absolute;
+            top: 0px;
+            left: -10px;
+            background-color: #f6f6f6;
+            padding: 30px;
+            transform: translatey(-120%);
+            @include flexfunksiya (column, center, center, wrap);
+            gap: 36px;
+            transition: all 1s ease;
         }
+        .btn {}
+        .btn1 {}
     }
     .label {
         display: block;
     }
     .input:checked~.nav .nav__list {
         transform: translatey(0);
-    }
-}
-
-.card {
-    &-title {
-        padding-top: 50px;
-        font-family: $fonts;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 46px;
-        color: $nav-color
-    }
-    .leni {
-        font-family: $fonts;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 130%;
-        color: $nav-color;
-        opacity: 0.6;
-        &:hover {
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 130%;
-            color: $nav-color;
-            opacity: 0.9;
-            transition: all 5s ease;
-        }
-        &__text {
-            font-family: $fonts;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 130%;
-            color: $nav-color;
-        }
     }
 }
 

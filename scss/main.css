@@ -116,55 +116,6 @@ p {
   border: 1px solid #1064E5;
 }
 
-.card-title {
-  padding-top: 113px;
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 46px;
-  color: rgba(6, 18, 36, 0.9);
-  padding-bottom: 18px;
-}
-.card .leni {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 130%;
-  color: rgba(6, 18, 36, 0.9);
-  opacity: 0.6;
-  padding-bottom: 15px;
-}
-.card .leni:hover {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 130%;
-  color: rgba(6, 18, 36, 0.9);
-  opacity: 0.9;
-  transition: all 5s ease;
-}
-.card .card__text {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 130%;
-  color: rgba(6, 18, 36, 0.9);
-  padding-bottom: 15px;
-}
-.card .btn {
-  background: #1064E5;
-  border-radius: 45px;
-  margin-top: 32px;
-}
-.card .btn:hover {
-  transition: all 2s ease;
-  transform: rotate(360deg);
-  background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
-  color: #1064E5;
-}
-
 .span {
   display: flex;
   flex-direction: row;
@@ -192,25 +143,29 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  header {
-    padding: 0;
-    position: absolute;
-    top: 0;
-    background-image: url(../../imges/tabletbagcround.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-  }
   .nav {
-    padding: 39px;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 39px 39px;
   }
   .nav__list {
-    display: none;
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    background-color: #f6f6f6;
+    padding: 30px;
+    transform: translatey(-120%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 36px;
+    transition: all 1s ease;
   }
   .label {
     display: block;
@@ -218,38 +173,4 @@ p {
   .input:checked ~ .nav .nav__list {
     transform: translatey(0);
   }
-}
-.card-title {
-  padding-top: 50px;
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 46px;
-  color: rgba(6, 18, 36, 0.9);
-}
-.card .leni {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 130%;
-  color: rgba(6, 18, 36, 0.9);
-  opacity: 0.6;
-}
-.card .leni:hover {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 130%;
-  color: rgba(6, 18, 36, 0.9);
-  opacity: 0.9;
-  transition: all 5s ease;
-}
-.card .leni__text {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 130%;
-  color: rgba(6, 18, 36, 0.9);
 }/*# sourceMappingURL=main.css.map */
