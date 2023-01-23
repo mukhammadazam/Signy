@@ -143,6 +143,13 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    background-image: url(../../imges/box.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding-bottom: 137px;
+  }
   .nav {
     position: relative;
     display: flex;
@@ -172,5 +179,38 @@ p {
   }
   .input:checked ~ .nav .nav__list {
     transform: translatey(0);
+  }
+}
+@media screen and (max-width: 576px) {
+  header {
+    background-image: url(../../imges/boxmabayl.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding-bottom: 137px;
+  }
+  .nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+  }
+  .nav__list {
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    background-color: #f6f6f6;
+    padding: 30px;
+    transform: translatey(-120%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 36px;
+    transition: all 1s ease;
   }
 }/*# sourceMappingURL=main.css.map */

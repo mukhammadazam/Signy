@@ -98,6 +98,10 @@ p {
 }
 
 @media screen and (max-width:768px) {
+    header {
+        @include BG (url(../../imges/box.png), no-repeat, 100%, center);
+        padding-bottom: 137px;
+    }
     .nav {
         position: relative;
         @include flexfunksiya (row, center, space-between, wrap);
@@ -113,8 +117,6 @@ p {
             gap: 36px;
             transition: all 1s ease;
         }
-        .btn {}
-        .btn1 {}
     }
     .label {
         display: block;
@@ -124,4 +126,25 @@ p {
     }
 }
 
-@media screen and (max-width:576px) {}
+@media screen and (max-width:576px) {
+    header {
+        @include BG (url(../../imges/boxmabayl.png), no-repeat, 100%, center);
+        padding-bottom: 137px;
+    }
+    .nav {
+        position: relative;
+        @include flexfunksiya (row, center, space-between, wrap);
+        padding: 20px 20px;
+        &__list {
+            position: absolute;
+            top: 0px;
+            left: -10px;
+            background-color: #f6f6f6;
+            padding: 30px;
+            transform: translatey(-120%);
+            @include flexfunksiya (column, center, center, wrap);
+            gap: 36px;
+            transition: all 1s ease;
+        }
+    }
+}
