@@ -19,6 +19,7 @@
 
 body {
   font-family: "IBM Plex Sans";
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -34,6 +35,11 @@ header {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  padding-bottom: 137px;
+}
+
+p {
+  margin: 0;
 }
 
 .nav {
@@ -118,6 +124,7 @@ header {
   font-size: 40px;
   line-height: 46px;
   color: rgba(6, 18, 36, 0.9);
+  padding-bottom: 18px;
 }
 .card .leni {
   font-family: "IBM Plex Sans";
@@ -127,6 +134,7 @@ header {
   line-height: 130%;
   color: rgba(6, 18, 36, 0.9);
   opacity: 0.6;
+  padding-bottom: 15px;
 }
 .card .leni:hover {
   font-weight: 500;
@@ -136,13 +144,43 @@ header {
   opacity: 0.9;
   transition: all 5s ease;
 }
-.card .leni__text {
+.card .card__text {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 130%;
   color: rgba(6, 18, 36, 0.9);
+  padding-bottom: 15px;
+}
+.card .btn {
+  background: #1064E5;
+  border-radius: 45px;
+  margin-top: 32px;
+}
+.card .btn:hover {
+  transition: all 2s ease;
+  transform: rotate(360deg);
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  color: #1064E5;
+}
+
+.span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.span .span--leni {
+  display: block;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  left: 715px;
+  top: 637px;
+  border: 2px solid #1064E5;
 }
 
 .input {
@@ -154,46 +192,46 @@ header {
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    padding: 0 50px;
-  }
   header {
+    position: absolute;
+    top: 0;
     background-image: url(../../imges/tabletbagcround.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
   }
   .nav {
-    position: relative;
-    top: 0;
     display: flex;
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 39px 0;
+    padding: 30px 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
   }
   .nav__list {
+    position: absolute;
+    top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     transform: translatey(-120%);
-    transition: all 3s ease;
+    transition: all 2s ease;
     gap: 36px;
-  }
-  .nav__list--item a {
-    font-family: "IBM Plex Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    color: rgba(6, 18, 36, 0.9);
   }
   .label {
     display: block;
   }
+  .input:checked ~ .nav .nav__list {
+    transform: translatey(0);
+  }
+}
+.card {
+  max-width: 670px;
 }
 .card-title {
   padding-top: 50px;

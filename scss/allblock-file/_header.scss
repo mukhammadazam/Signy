@@ -1,7 +1,12 @@
 @import '../veraybels';
 @import './fonts';
 header {
-    @include BG (url(../../imges/box.png), no-repeat, 100%, center)
+    @include BG (url(../../imges/box.png), no-repeat, 100%, center);
+    padding-bottom: 137px;
+}
+
+p {
+    margin: 0;
 }
 
 .nav {
@@ -40,7 +45,7 @@ header {
         padding: 8px 32px;
         color: $nav-color;
         &:hover {
-            background: #1064E5;
+            background: $btn-color;
             border-radius: 45px;
             color: $white-color;
             transition: all 2s ease;
@@ -78,7 +83,8 @@ header {
         font-weight: 500;
         font-size: 40px;
         line-height: 46px;
-        color: $nav-color
+        color: $nav-color;
+        padding-bottom: 18px;
     }
     .leni {
         font-family: $fonts;
@@ -88,6 +94,7 @@ header {
         line-height: 130%;
         color: $nav-color;
         opacity: 0.6;
+        padding-bottom: 15px;
         &:hover {
             font-weight: 500;
             font-size: 24px;
@@ -96,14 +103,40 @@ header {
             opacity: 0.9;
             transition: all 5s ease;
         }
-        &__text {
-            font-family: $fonts;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 130%;
-            color: $nav-color;
+    }
+    .card__text {
+        font-family: $fonts;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 130%;
+        color: $nav-color;
+        padding-bottom: 15px;
+    }
+    .btn {
+        background: $btn-color;
+        border-radius: 45px;
+        margin-top: 32px;
+        &:hover {
+            transition: all 2s ease;
+            transform: rotate(360deg);
+            background: linear-gradient(0deg, $white-color, $white-color);
+            color: $btn-color;
         }
+    }
+}
+
+.span {
+    @include flexfunksiya (row, center, center, wrap);
+    gap: 25px;
+    .span--leni {
+        display: block;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        left: 715px;
+        top: 637px;
+        border: 2px solid $btn-color;
     }
 }
 
@@ -116,38 +149,36 @@ header {
 }
 
 @media screen and (max-width:768px) {
-    .container {
-        padding: 0 50px;
-    }
     header {
+        position: absolute;
+        top: 0;
         @include BG (url(../../imges/tabletbagcround.png), no-repeat, 100%, center);
     }
     .nav {
-        position: relative;
-        top: 0;
         @include flexfunksiya (row, start, space-between, wrap);
-        padding: 39px 0;
+        padding: 30px 20px;
+        width: 100%;
+        position: absolute;
+        top: 0;
         &__list {
-            @include flexfunksiya (column, center, center, wrap);
+            position: absolute;
+            top: 0;
+            @include flexfunksiya (column, center, space-between, wrap);
             transform: translatey(-120%);
-            transition: all 3s ease;
+            transition: all 2s ease;
             gap: 36px;
-            &--item a {
-                font-family: $fonts;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 24px;
-                color: $nav-color;
-            }
         }
     }
     .label {
         display: block;
     }
+    .input:checked~.nav .nav__list {
+        transform: translatey(0);
+    }
 }
 
 .card {
+    max-width: 670px;
     &-title {
         padding-top: 50px;
         font-family: $fonts;
