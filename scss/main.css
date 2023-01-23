@@ -303,4 +303,77 @@ p {
     height: 10px;
     border: 2px solid #1064E5;
   }
+}
+.hero {
+  padding-top: 54px;
+  padding-bottom: 74px;
+}
+.hero__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.hero__list--item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero__list .para {
+  padding-left: 20px;
+}
+.hero__list .para__title {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 65px;
+  color: rgba(6, 18, 36, 0.9);
+}
+.hero__list .para__text {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  max-width: 226px;
+  color: rgba(6, 18, 36, 0.9);
+}
+
+@media screen and (max-width: 768px) {
+  .hero__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 29px;
+  }
+  .hero__list--item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 29px;
+  }
+  .hero__list--item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,56 @@
+@import '../mixin';
+@import '../veraybels';
+.hero {
+    padding-top: 54px;
+    padding-bottom: 74px;
+    &__list {
+        @include flexfunksiya (row, center, space-around, wrap);
+        &--item {
+            @include flexfunksiya (row, center, center, wrap);
+        }
+        .para {
+            padding-left: 20px;
+        }
+        .para__title {
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 65px;
+            color: rgba(6, 18, 36, 0.9);
+        }
+        .para__text {
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            max-width: 226px;
+            color: rgba(6, 18, 36, 0.9);
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero {
+        &__list {
+            @include flexfunksiya (row, center, center, nowrap);
+            gap: 29px;
+            &--item {
+                @include flexfunksiya (row, center, center, nowrap);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hero {
+        &__list {
+            @include flexfunksiya (row, center, center, wrap);
+            gap: 29px;
+            &--item {
+                @include flexfunksiya (row, center, center, wrap);
+            }
+        }
+    }
+}
