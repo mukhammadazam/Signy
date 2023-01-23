@@ -150,23 +150,16 @@ p {
 
 @media screen and (max-width:768px) {
     header {
+        padding: 0;
         position: absolute;
         top: 0;
         @include BG (url(../../imges/tabletbagcround.png), no-repeat, 100%, center);
     }
     .nav {
-        @include flexfunksiya (row, start, space-between, wrap);
-        padding: 30px 20px;
-        width: 100%;
-        position: absolute;
-        top: 0;
+        padding: 39px;
+        @include flexfunksiya (row, center, space-between, wrap);
         &__list {
-            position: absolute;
-            top: 0;
-            @include flexfunksiya (column, center, space-between, wrap);
-            transform: translatey(-120%);
-            transition: all 2s ease;
-            gap: 36px;
+            display: none;
         }
     }
     .label {
@@ -178,7 +171,6 @@ p {
 }
 
 .card {
-    max-width: 670px;
     &-title {
         padding-top: 50px;
         font-family: $fonts;
