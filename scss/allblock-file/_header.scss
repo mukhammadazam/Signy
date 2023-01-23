@@ -1,150 +1,241 @@
-@import '../veraybels';
-@import './fonts';
-header {
-    @include BG (url(../../imges/box.png), no-repeat, 100%, center);
-    padding-bottom: 137px;
-}
-
-p {
-    margin: 0;
-}
-
-.nav {
-    @include flexfunksiya (row, center, space-between, wrap);
-    padding: 39px 0;
-    &__list {
-        @include flexfunksiya (row, center, center, wrap);
-        gap: 36px;
-        &--item a {
+    @import '../veraybels';
+    @import './fonts';
+    header {
+        @include BG (url(../../imges/box.png), no-repeat, 100%, center);
+        padding-bottom: 137px;
+    }
+    
+    p {
+        margin: 0;
+    }
+    
+    .nav {
+        @include flexfunksiya (row, center, space-between, wrap);
+        padding: 39px 0;
+        &__list {
+            @include flexfunksiya (row, center, center, wrap);
+            gap: 36px;
+            &--item a {
+                font-family: $fonts;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: $nav-color;
+            }
+        }
+        .select {
             font-family: $fonts;
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
+            border: none;
+            background: transparent;
             color: $nav-color;
         }
-    }
-    .select {
-        font-family: $fonts;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
-        border: none;
-        background: transparent;
-        color: $nav-color;
-    }
-    .btn {
-        font-family: $fonts;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
-        border: 1.5px solid$btn-color;
-        border-radius: 43px;
-        padding: 8px 32px;
-        color: $nav-color;
-        &:hover {
+        .btn {
+            font-family: $fonts;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            border: 1.5px solid$btn-color;
+            border-radius: 43px;
+            padding: 8px 32px;
+            color: $nav-color;
+            &:hover {
+                background: $btn-color;
+                border-radius: 45px;
+                color: $white-color;
+                transition: all 2s ease;
+                transform: rotate(360deg);
+            }
+        }
+        .btn1 {
+            font-family: $fonts;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: $white-color;
             background: $btn-color;
             border-radius: 45px;
-            color: $white-color;
-            transition: all 2s ease;
-            transform: rotate(360deg);
+            border: none;
+            padding: 8px 32px;
+            border: 1px solid transparent;
+            &:hover {
+                background: $white-color;
+                border-radius: 45px;
+                color: $btn-color;
+                transition: all 2s ease;
+                transform: rotate(360deg);
+                border: 1px solid $btn-color;
+            }
         }
     }
-    .btn1 {
-        font-family: $fonts;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
-        color: $white-color;
-        background: $btn-color;
-        border-radius: 45px;
-        border: none;
-        padding: 8px 32px;
-        border: 1px solid transparent;
-        &:hover {
-            background: $white-color;
-            border-radius: 45px;
-            color: $btn-color;
-            transition: all 2s ease;
-            transform: rotate(360deg);
-            border: 1px solid $btn-color;
-        }
+    
+    .input {
+        display: none;
     }
-}
-
-.span {
-    @include flexfunksiya (row, center, center, wrap);
-    gap: 25px;
-    .span--leni {
-        display: block;
-        border-radius: 50%;
-        width: 10px;
-        height: 10px;
-        left: 715px;
-        top: 637px;
-        border: 2px solid $btn-color;
-    }
-}
-
-.input {
-    display: none;
-}
-
-.label {
-    display: none;
-}
-
-@media screen and (max-width:768px) {
-    header {
-        @include BG (url(../../imges/box.png), no-repeat, 100%, center);
-        padding-bottom: 137px;
-    }
-    .nav {
-        position: relative;
-        @include flexfunksiya (row, center, space-between, wrap);
-        padding: 39px 39px;
-        &__list {
-            position: absolute;
-            top: 0px;
-            left: -10px;
-            background-color: #f6f6f6;
-            padding: 30px;
-            transform: translatey(-120%);
-            @include flexfunksiya (column, center, center, wrap);
-            gap: 36px;
-            transition: all 1s ease;
-        }
-    }
+    
     .label {
-        display: block;
+        display: none;
     }
-    .input:checked~.nav .nav__list {
-        transform: translatey(0);
-    }
-}
-
-@media screen and (max-width:576px) {
-    header {
-        @include BG (url(../../imges/boxmabayl.png), no-repeat, 100%, center);
-        padding-bottom: 137px;
-    }
-    .nav {
-        position: relative;
-        @include flexfunksiya (row, center, space-between, wrap);
-        padding: 20px 20px;
-        &__list {
-            position: absolute;
-            top: 0px;
-            left: -10px;
-            background-color: #f6f6f6;
-            padding: 30px;
-            transform: translatey(-120%);
-            @include flexfunksiya (column, center, center, wrap);
-            gap: 36px;
-            transition: all 1s ease;
+    
+    @media screen and (max-width:768px) {
+        header {
+            padding-bottom: 30px;
+            @include BG (url(../../imges/tabletbagcround.png), no-repeat, 100%, center);
+        }
+        .nav {
+            position: relative;
+            @include flexfunksiya (row, center, space-between, wrap);
+            padding: 30px 39px;
+            &__list {
+                position: absolute;
+                top: 0px;
+                left: -10px;
+                background-color: #f6f6f6;
+                padding: 30px;
+                transform: translatey(-120%);
+                @include flexfunksiya (column, center, center, wrap);
+                gap: 36px;
+                transition: all 1s ease;
+            }
+        }
+        .label {
+            display: block;
+        }
+        .input:checked~.nav .nav__list {
+            transform: translatey(0);
         }
     }
-}
+    
+    @media screen and (max-width:576px) {
+        header {
+            @include BG (url(../../imges/boxmabayl.png), no-repeat, 100%, center);
+            padding-bottom: 13px;
+        }
+        .nav {
+            position: relative;
+            @include flexfunksiya (row, center, space-between, wrap);
+            padding: 20px 20px;
+            &__list {
+                position: absolute;
+                top: 0px;
+                left: -10px;
+                background-color: #f6f6f6;
+                padding: 30px;
+                transform: translatey(-120%);
+                @include flexfunksiya (column, center, center, wrap);
+                gap: 36px;
+                transition: all 1s ease;
+            }
+        }
+    }
+    
+    .digital {
+        padding-top: 115px;
+        &__title {
+            max-width: 560px;
+            width: 100%;
+            padding-bottom: 14px;
+            font-family: $fonts;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 46px;
+            color: $fonts;
+        }
+        .leni1 {
+            font-family: $fonts;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 130%;
+            color: $nav-color;
+        }
+        &__strong {
+            display: block;
+            padding: 14px 0;
+            font-family: $fonts;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 130%;
+            color: $nav-color;
+        }
+        &__text {
+            max-width: 453px;
+            font-family: $fonts;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: $nav-color;
+            padding-bottom: 37px;
+        }
+        &__btn {
+            padding: 15px 32px;
+            background: #1064E5;
+            border-radius: 45px;
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 130%;
+            color: $white-color;
+            border: none;
+            border: 1px solid transparent;
+            &:hover {
+                &:hover {
+                    background: $white-color;
+                    border-radius: 45px;
+                    color: $btn-color;
+                    transition: all 2s ease;
+                    transform: rotate(360deg);
+                    border: 1px solid $btn-color;
+                }
+            }
+        }
+        .span {
+            padding-top: 98px;
+            @include flexfunksiya (row, center, center, wrap);
+            gap: 25px;
+            .span--leni {
+                display: block;
+                border-radius: 50%;
+                width: 10px;
+                height: 10px;
+                border: 2px solid $btn-color;
+            }
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        .digital {
+            padding: 0 39px;
+            &__title {
+                max-width: 340px;
+            }
+            &__text {
+                max-width: 324px;
+                padding-bottom: 35px;
+            }
+            &__btn {
+                .span {
+                    padding-top: 98px;
+                    @include flexfunksiya (row, center, center, wrap);
+                    gap: 25px;
+                    .span--leni {
+                        display: block;
+                        border-radius: 50%;
+                        width: 10px;
+                        height: 10px;
+                        border: 2px solid $btn-color;
+                    }
+                }
+            }
+        }
+    }
