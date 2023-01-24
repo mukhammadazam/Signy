@@ -383,6 +383,13 @@ p {
   padding-bottom: 92px;
 }
 
+.conford {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
 .conford__left--title {
   font-family: "IBM Plex Sans";
   font-style: normal;
@@ -410,4 +417,13 @@ p {
   font-size: 14px;
   line-height: 24px;
   color: rgba(6, 18, 36, 0.9);
+  border: 1.5px solid #1064E5;
+  border-radius: 46px;
+}
+.conford__left .btn:hover {
+  background-color: #1064E5;
+  border: 1.5px solid transparent;
+  transition: all 2s ease;
+  color: #FFFFFF;
+  transform: rotate(360deg);
 }/*# sourceMappingURL=main.css.map */
