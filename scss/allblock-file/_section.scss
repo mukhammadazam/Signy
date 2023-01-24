@@ -62,6 +62,7 @@
 }
 
 .conford {
+    padding-bottom: 53px;
     @include flexfunksiya (row, center, space-between, wrap);
     &__left {
         &--title {
@@ -114,6 +115,7 @@
 
 @media screen and (max-width:768px) {
     .conford {
+        padding-bottom: 57px;
         .lleft {
             padding-right: 50px;
         }

@@ -384,6 +384,7 @@ p {
 }
 
 .conford {
+  padding-bottom: 53px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -436,6 +437,7 @@ p {
 
 @media screen and (max-width: 768px) {
   .conford {
+    padding-bottom: 57px;
     display: flex;
     flex-direction: row;
     align-items: center;
