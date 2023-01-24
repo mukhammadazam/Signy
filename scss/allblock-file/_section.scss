@@ -57,4 +57,39 @@
 
 .conford-site {
     background: #D8F1F0;
+    padding-top: 57px;
+    padding-bottom: 92px;
+}
+
+.conford {
+    &__left {
+        &--title {
+            font-family: $fonts;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 48px;
+            color: $nav-color;
+            padding-bottom: 18px;
+        }
+        &--text {
+            max-width: 512px;
+            font-family: $fonts;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: $nav-color;
+            padding-bottom: 18px;
+        }
+        .btn {
+            padding: 22px 50px;
+            font-family: 'IBM Plex Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 24px;
+            color: rgba(6, 18, 36, 0.9);
+        }
+    }
 }
