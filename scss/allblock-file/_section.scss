@@ -62,7 +62,7 @@
 }
 
 .conford {
-    @include flexfunksiya (row, center, space-between, nowrap);
+    @include flexfunksiya (row, center, space-between, wrap);
     &__left {
         &--title {
             font-family: $fonts;
@@ -99,6 +99,68 @@
                 transition: all 2s ease;
                 color: $white-color;
                 transform: rotate(360deg);
+            }
+        }
+    }
+    &__right {
+        &--img1 {
+            display: none;
+        }
+        &--img2 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .conford {
+        &__left {
+            .btn {
+                padding: 11px 50px;
+            }
+        }
+        @include flexfunksiya (row, center, space-between, nowrap);
+        &__right {
+            &--img {
+                display: none;
+            }
+            &--img2 {
+                display: none;
+            }
+            &--img1 {
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .conford {
+        &__left {
+            padding-bottom: 32px;
+            &--title {
+                font-size: 20px;
+                line-height: 22px;
+            }
+            &--text {
+                max-width: 267px;
+                margin: 0 auto;
+                font-size: 14px;
+            }
+            .btn {
+                padding: 11px 50px;
+            }
+        }
+        @include flexfunksiya (column, center, center, wrap);
+        &__right {
+            &--img {
+                display: none;
+            }
+            &--img1 {
+                display: none;
+            }
+            &--img2 {
+                display: block;
             }
         }
     }
