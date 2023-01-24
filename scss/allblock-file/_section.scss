@@ -181,3 +181,13 @@
         }
     }
 }
+
+.signature {
+    &__title {}
+    &__list {
+        &--item {
+            background: #DEEEFC;
+            border-radius: 4px;
+        }
+    }
+}

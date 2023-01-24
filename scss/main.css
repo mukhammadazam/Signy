@@ -503,4 +503,8 @@ p {
   .conford__right--img2 {
     display: block;
   }
+}
+.signature__list--item {
+  background: #DEEEFC;
+  border-radius: 4px;
 }/*# sourceMappingURL=main.css.map */
