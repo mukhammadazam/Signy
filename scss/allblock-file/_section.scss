@@ -114,8 +114,13 @@
 
 @media screen and (max-width:768px) {
     .conford {
-        &__left {
+        .lleft {
+            padding-right: 50px;
+        }
+        .llleft {
             padding-left: 50px;
+        }
+        &__left {
             .btn {
                 padding: 11px 50px;
             }
@@ -130,7 +135,6 @@
             }
             &--img1 {
                 display: block;
-                padding-right: -50px;
             }
         }
     }
@@ -139,6 +143,12 @@
 @media screen and (max-width:576px) {
     .conford {
         padding-bottom: 53px;
+        .lleft {
+            padding-right: 0px;
+        }
+        .llleft {
+            padding-left: 0px;
+        }
         &__left {
             padding-bottom: 32px;
             &--title {

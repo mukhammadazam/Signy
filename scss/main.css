@@ -442,7 +442,10 @@ p {
     justify-content: space-between;
     flex-wrap: nowrap;
   }
-  .conford__left {
+  .conford .lleft {
+    padding-right: 50px;
+  }
+  .conford .llleft {
     padding-left: 50px;
   }
   .conford__left .btn {
@@ -456,7 +459,6 @@ p {
   }
   .conford__right--img1 {
     display: block;
-    padding-right: -50px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -467,6 +469,12 @@ p {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  .conford .lleft {
+    padding-right: 0px;
+  }
+  .conford .llleft {
+    padding-left: 0px;
   }
   .conford__left {
     padding-bottom: 32px;
