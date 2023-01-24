@@ -115,6 +115,7 @@
 @media screen and (max-width:768px) {
     .conford {
         &__left {
+            padding-left: 50px;
             .btn {
                 padding: 11px 50px;
             }
@@ -129,6 +130,7 @@
             }
             &--img1 {
                 display: block;
+                padding-right: -50px;
             }
         }
     }
@@ -136,9 +138,11 @@
 
 @media screen and (max-width:576px) {
     .conford {
+        padding-bottom: 53px;
         &__left {
             padding-bottom: 32px;
             &--title {
+                padding-top: 18px;
                 font-size: 20px;
                 line-height: 22px;
             }
