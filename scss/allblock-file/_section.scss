@@ -472,6 +472,10 @@
     }
 }
 
+.news-site {
+    background-color: $nav-color;
+}
+
 .news {
     padding-top: 56px;
     padding-bottom: 98px;
@@ -482,7 +486,7 @@
         font-size: 40px;
         line-height: 48px;
         text-align: center;
-        color: $nav-color;
+        color: $white-color;
     }
     &__text {
         font-family: $fonts;
@@ -492,7 +496,7 @@
         font-size: 18px;
         line-height: 33px;
         text-align: center;
-        color: $nav-color;
+        color: $white-color;
     }
     .form {
         @include flexfunksiya (row, center, center, nowrap);
@@ -508,6 +512,7 @@
         height: 50px;
     }
     .btn {
+        outline: none;
         padding: 17px 30px;
         background: $btn-color;
         border-radius: 41px;

@@ -801,6 +801,10 @@ p {
   color: #000;
 }
 
+.news-site {
+  background-color: rgba(6, 18, 36, 0.9);
+}
+
 .news {
   padding-top: 56px;
   padding-bottom: 98px;
@@ -812,7 +816,7 @@ p {
   font-size: 40px;
   line-height: 48px;
   text-align: center;
-  color: rgba(6, 18, 36, 0.9);
+  color: #FFFFFF;
 }
 .news__text {
   font-family: "IBM Plex Sans";
@@ -822,7 +826,7 @@ p {
   font-size: 18px;
   line-height: 33px;
   text-align: center;
-  color: rgba(6, 18, 36, 0.9);
+  color: #FFFFFF;
 }
 .news .form {
   display: flex;
@@ -842,6 +846,7 @@ p {
   height: 50px;
 }
 .news .btn {
+  outline: none;
   padding: 17px 30px;
   background: #1064E5;
   border-radius: 41px;
