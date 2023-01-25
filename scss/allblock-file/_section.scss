@@ -361,3 +361,36 @@
     padding-top: 38px;
     padding-bottom: 44px;
 }
+
+.writing {
+    &__title {
+        font-family: $fonts;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: $nav-color;
+    }
+    &__list {
+        .date {
+            padding-top: 14px;
+            padding-bottom: 6px;
+            font-family: $fonts;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: $nav-color;
+        }
+        .writing-text {
+            max-width: 256px;
+            font-family: $fonts;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 26px;
+            color: $nav-color;
+        }
+    }
+}
