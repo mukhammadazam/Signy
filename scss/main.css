@@ -504,15 +504,110 @@ p {
     display: block;
   }
 }
+.signature {
+  padding-bottom: 98px;
+}
+.signature__title {
+  font-family: "IBM Plex Sans";
+  padding: 60px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
+}
+.signature__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .signature__list--item {
   padding: 32px;
-  max-width: 256px;
+  width: 256px;
+  height: 352px;
   background: #DEEEFC;
   border-radius: 4px;
 }
 .signature__list .list-text {
   padding-bottom: 44px;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  color: rgba(6, 18, 36, 0.9);
 }
 .signature__list .list-text1 {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(6, 18, 36, 0.9);
   padding-bottom: 18px;
+}
+.signature__list .list-text3 {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: rgba(6, 18, 36, 0.9);
+  padding-bottom: 50px;
+}
+.signature__list .text3-leni {
+  font-size: 20px;
+  line-height: 24px;
+}
+.signature__list .list-text121 {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 180px;
+  padding-bottom: 84px;
+  color: rgba(6, 18, 36, 0.9);
+}
+.signature__list .pll {
+  padding-left: 32px;
+  padding-right: 60px;
+}
+.signature__list .pll1 {
+  padding: 23px;
+}
+.signature__list .btn {
+  background: #1064E5;
+  border-radius: 100px;
+  padding: 9px 20px;
+  border: none;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #EBF5F6;
+  border: 1px solid transparent;
+  transition: all 2s ease;
+}
+.signature__list .btn:hover {
+  background: #FFFFFF;
+  color: #1064E5;
+  border: 1px solid #1064E5;
+  transition: all 2s ease;
+  transform: rotate(360deg);
+}
+
+@media screen and (max-width: 768px) {
+  .siganture__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=main.css.map */
