@@ -610,4 +610,39 @@ p {
     justify-content: space-around;
     flex-wrap: wrap;
   }
+}
+.segnet-site {
+  background: #D8F1F0;
+  padding: 43px 0;
+}
+
+.segned__title {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 73px;
+  line-height: 48px;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
+}
+.segned__text {
+  text-align: center;
+  padding: 12px 0;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  color: rgba(6, 18, 36, 0.9);
+}
+.segned__text1 {
+  max-width: 478px;
+  margin: 0 auto;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
 }/*# sourceMappingURL=main.css.map */
