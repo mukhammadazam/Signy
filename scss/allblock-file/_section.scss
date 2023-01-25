@@ -371,8 +371,10 @@
         line-height: 48px;
         text-align: center;
         color: $nav-color;
+        padding-bottom: 32px;
     }
     &__list {
+        @include flexfunksiya (row, center, space-between, wrap);
         .date {
             padding-top: 14px;
             padding-bottom: 6px;
@@ -391,6 +393,27 @@
             font-size: 24px;
             line-height: 26px;
             color: $nav-color;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .writing {
+        &__title {
+            font-family: $fonts;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 48px;
+            text-align: center;
+            color: $nav-color;
+            padding-bottom: 32px;
+        }
+        &__list {
+            @include flexfunksiya (row, center, space-evenly, wrap);
+            &--item {
+                padding-bottom: 40px;
+            }
         }
     }
 }
