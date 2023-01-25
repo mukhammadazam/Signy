@@ -322,3 +322,42 @@
         color: $nav-color;
     }
 }
+
+.druze {
+    &__title {
+        padding-top: 44px;
+        padding-bottom: 29px;
+        font-family: $fonts;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: $nav-color;
+    }
+    &__list {
+        @include flexfunksiya (row, center, space-around, wrap);
+    }
+    .span1 {
+        @include flexfunksiya (row, center, center, nowrap);
+        gap: 25px;
+        padding-top: 30px;
+        padding-bottom: 58px;
+        .leni11 {
+            display: block;
+            border: 1px solid $btn-color;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            &:hover {
+                background: $btn-color;
+            }
+        }
+    }
+}
+
+.writing-site {
+    background: #D8F1F0;
+    padding-top: 38px;
+    padding-bottom: 44px;
+}

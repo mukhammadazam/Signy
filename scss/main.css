@@ -645,4 +645,49 @@ p {
   line-height: 28px;
   text-align: center;
   color: rgba(6, 18, 36, 0.9);
+}
+
+.druze__title {
+  padding-top: 44px;
+  padding-bottom: 29px;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: rgba(6, 18, 36, 0.9);
+}
+.druze__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.druze .span1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 25px;
+  padding-top: 30px;
+  padding-bottom: 58px;
+}
+.druze .span1 .leni11 {
+  display: block;
+  border: 1px solid #1064E5;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.druze .span1 .leni11:hover {
+  background: #1064E5;
+}
+
+.writing-site {
+  background: #D8F1F0;
+  padding-top: 38px;
+  padding-bottom: 44px;
 }/*# sourceMappingURL=main.css.map */
