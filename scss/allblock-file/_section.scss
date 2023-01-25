@@ -439,3 +439,92 @@
         margin: 0 auto;
     }
 }
+
+.popular-site {
+    background: #D8F1F0;
+    padding-top: 26px;
+    padding-bottom: 42px;
+}
+
+.popular {
+    &__title {
+        font-family: $fonts;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: $nav-color;
+        padding-bottom: 36px;
+    }
+    &__text {
+        max-width: 523px;
+        margin: 0 auto;
+        font-family: $fonts;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: $nav-color;
+        .popular__leni {
+            color: #000;
+        }
+    }
+}
+
+.news {
+    padding-top: 56px;
+    padding-bottom: 98px;
+    &__title {
+        font-family: $fonts;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: $nav-color;
+    }
+    &__text {
+        font-family: $fonts;
+        padding: 30px 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 33px;
+        text-align: center;
+        color: $nav-color;
+    }
+    .form {
+        @include flexfunksiya (row, center, center, nowrap);
+        gap: 18px;
+    }
+    .input {
+        padding: 0 10px;
+        border: 1px solid #1064E5;
+        border-radius: 37px;
+        display: block;
+        max-width: 399px;
+        width: 100%;
+        height: 50px;
+    }
+    .btn {
+        padding: 17px 30px;
+        background: $btn-color;
+        border-radius: 41px;
+        border: none;
+        border: 1px solid transparent;
+        font-family: $fonts;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        color: $white-color;
+        &:hover {
+            background: $white-color;
+            border: 1px solid $btn-color;
+            transform: rotate(360deg);
+            transition: all 2s ease;
+            color: $btn-color;
+        }
+    }
+}
