@@ -186,8 +186,16 @@
     &__title {}
     &__list {
         &--item {
+            padding: 32px;
+            max-width: 256px;
             background: #DEEEFC;
             border-radius: 4px;
+        }
+        .list-text {
+            padding-bottom: 44px;
+        }
+        .list-text1 {
+            padding-bottom: 18px;
         }
     }
 }
